@@ -80,9 +80,9 @@ namespace BaseballGamePace {
                 for (int j = 0; j < GamePaces.Count; j++) {
                     if (GamePaces[j].Away != obj.GetObjectAt(i).GetNamedString("away") || GamePaces[j].Home != obj.GetObjectAt(i).GetNamedString("home")) continue;
                     found = true;
-                    if (GamePaces[j].Inning != obj.GetObjectAt(i).GetNamedString("inning") || GamePaces[j].Frame != obj.GetObjectAt(i).GetNamedString("frame") || GamePaces[j].IsOver != obj.GetObjectAt(i).GetNamedBoolean("is_over")) {
+                    //if (GamePaces[j].Inning != obj.GetObjectAt(i).GetNamedString("inning") || GamePaces[j].Frame != obj.GetObjectAt(i).GetNamedString("frame") || GamePaces[j].IsOver != obj.GetObjectAt(i).GetNamedBoolean("is_over")) {
                         GamePaces[j] = pace;
-                    }
+                    //}
                 }
                 if (!found) {
                     GamePaces.Add(pace);
