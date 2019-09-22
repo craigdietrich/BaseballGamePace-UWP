@@ -42,12 +42,9 @@
             </GridView.ItemTemplate>
         </GridView>
         <StackPanel Grid.Row="1" x:Name="optionsStackPanel" Margin="0,0,0,20" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <!--
-            <TextBlock x:Name="legendBehind" Text="Behind schedule" Margin="0,0,10,0" FontSize="12" Foreground="#FF4444" Tapped="Creator_Tapped" />
-            <TextBlock x:Name="legendAhead" Text="Ahead of schedule" Margin="10,0,10,0" FontSize="12" Foreground="#44FF44" Tapped="Creator_Tapped" />
-            -->
-            <TextBlock x:Name="timer" Text="2019-09-09 11:22 AM" Margin="10,0,10,0" FontSize="12" Foreground="Gray" Tapped="Creator_Tapped" />
-            <TextBlock x:Name="creator" Text="craigdietrich.com" Margin="10,0,0,0" FontSize="12" Foreground="Gray" Tapped="Creator_Tapped" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" />
+            <TextBlock x:Name="scoreboard" Text="open scoreboard" Margin="0,0,10,0" FontSize="12" Foreground="#807e96" Tapped="Scoreboard_Tapped" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" />
+            <TextBlock x:Name="timer" Text="2019-09-09 11:22 AM" Margin="10,0,10,0" FontSize="12" Foreground="#979797" />
+            <TextBlock x:Name="creator" Text="craigdietrich.com" Margin="10,0,0,0" FontSize="12" Foreground="#807e96" Tapped="Creator_Tapped" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" />
         </StackPanel>
     </Grid>
 

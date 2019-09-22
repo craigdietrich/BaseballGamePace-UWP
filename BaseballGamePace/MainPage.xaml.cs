@@ -103,6 +103,10 @@ namespace BaseballGamePace {
             var url = new Uri(@"https://craigdietrich.com/");
             var success = await Windows.System.Launcher.LaunchUriAsync(url);
         }
+        private async void Scoreboard_Tapped(object sender, TappedRoutedEventArgs e) {
+            var url = new Uri(@"https://www.espn.com/mlb/scoreboard");
+            var success = await Windows.System.Launcher.LaunchUriAsync(url);
+        }
         private void Button_PointerEntered(object sender, PointerRoutedEventArgs e) {
             Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
         }
