@@ -16,7 +16,9 @@
         <Grid Grid.Row="0" x:Name="errorMsg" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
             <TextBlock x:Name="errorMsgText" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
         </Grid>
-        <GridView Grid.Row="0" x:Name="gamesGridView" Margin="14,20,14,0" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
+        <GridView Grid.Row="0" x:Name="gamesGridView" Margin="14,20,14,0" 
+                  IsItemClickEnabled="True" ItemClick="GamesGridView_ItemClick" SelectionMode="Single"
+                  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:GamePace">
                     <Grid Margin="14,0,14,0">

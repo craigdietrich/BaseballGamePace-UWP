@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Net.Http;
 using Windows.Data.Json;
 using Windows.UI;
 using Windows.UI.ViewManagement;
@@ -112,6 +111,12 @@ namespace BaseballGamePace {
         }
         private void Button_PointerExited(object sender, PointerRoutedEventArgs e) {
             Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private async void GamesGridView_ItemClick(object sender, ItemClickEventArgs e) {
+            var gridView = sender as GridView;
+            if (e.ClickedItem == gridView.SelectedItem) {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => gridView.SelectedItem = null);
+            }
         }
     }
 
